@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <title>Contact</title>
+    <meta charset="utf-8">
+    <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <![endif]-->
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/main.css" class="color-switcher-link">
+    <link rel="stylesheet" href="css/shop.css" class="color-switcher-link">
+    <script src="js/vendor/modernizr-custom.js"></script>
+
+</head>
+
+<body>
+
+<!-- search modal -->
+<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="widget widget_search">
+                <form method="get" class="searchform search-form" action="#">
+                    <div class="form-group">
+                        <input type="text" value="" id="filter" name="search" class="form-control"
+                               placeholder="Search keyword">
+                    </div>
+                    <button type="submit" class="btn">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Unyson messages modal -->
+<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+    <div class="modal-dialog">
+        <div class="fw-messages-wrap ls p-normal">
+            <!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+            <!--
+        <ul class="list-unstyled">
+            <li>Message To User</li>
+        </ul>
+        -->
+
+        </div>
+    </div>
+</div><!-- eof .modal -->
+
+<div class="modal fade " id="loginModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal_login_form">
+            <div class="modal-body ">
+                <div class="menu-left cover-image">
+                    <img src="images/events/01.jpg" alt="img">
+                </div>
+                <div class="menu-right ls">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <p>
+                        <a href="#" class="link-underline">Sign in</a>
+                        <span class="pl-3 pr-3">or</span>
+                        <a href="#" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal"
+                           data-bs-target="#registerModal" class="color-font">Sign up</a>
+                    </p>
+
+                    <div class="divider-50"></div>
+
+                    <form>
+
+                        <div class="form-group">
+                            <label for="login-email">Email address</label>
+                            <input type="text" class="form-control" id="login-email" placeholder="Email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="login-password">Password</label>
+                            <input type="password" class="form-control" id="login-password" placeholder="Password">
+                        </div>
+
+                        <div class="checkbox form-group mt-35">
+                            <input type="checkbox" id="remember_me_checkbox">
+                            <label class="mb-0" for="remember_me_checkbox">Remember Me
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn mt-20 btn-maincolor">Get Started</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade " id="registerModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal_login_form">
+            <div class="modal-body ">
+                <div class="menu-left cover-image">
+                    <img src="images/events/02.jpg" alt="img">
+                </div>
+                <div class="menu-right ls">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <p>
+                        <a href="#" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal"
+                           data-bs-target="#loginModal" class="link-underline">Sign in</a>
+                        <span class="pl-3 pr-3">or</span>
+                        <a href="#" class="color-font">Sign up</a>
+                    </p>
+
+                    <div class="divider-50"></div>
+
+                    <form>
+
+                        <div class="form-group">
+                            <label for="login-email">Username</label>
+                            <input type="text" class="form-control" id="login-name" placeholder="Enter your full name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="login-password-registr">Password</label>
+                            <input type="password" class="form-control" id="login-password-registr"
+                                   placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="login-email-registr">Email</label>
+                            <input type="text" class="form-control" id="login-email-registr"
+                                   placeholder="Your email goes here">
+                        </div>
+
+
+                        <div class="checkbox form-group mt-35">
+                            <input type="checkbox" id="agree_me_checkbox">
+                            <label class="mb-0" for="agree_me_checkbox">I agree all terms of science
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-maincolor mt-20">Get Started</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- wrappers for visual page editor and boxed version of template -->
+<div id="canvas">
+    <div id="box_wrapper">
+
+        <!-- template sections -->
+
+        <!--topline section visible only on small screens|-->
+        <section class="page_topline ls ms c-my-10">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-12 d-flex">
+                        <div class="me-auto me-4">
+								<span class="social-icons">
+
+									<span class="color-dark small-text me-4">
+										Follow us:
+									</span>
+
+									<a href="#" class="fa fa-facebook @@iconClass" title="facebook"></a>
+									<a href="#" class="fa fa-twitter @@iconClass" title="twitter"></a>
+									<a href="#" class="fa fa-instagram @@iconClass" title="google"></a>
+
+								</span>
+                        </div>
+                        <div>
+                            <div id="topline_dropdown" class="dropdown meta-dropdown">
+									<span id="toplineDropdown" class="nav-btn type-dots dark" data-bs-toggle="dropdown"
+                                          aria-expanded="false" role="button">
+										<span></span>
+									</span>
+                                <ul class="dropdown-menu dropdown-menu-md site-meta" aria-labelledby="toplineDropdown">
+                                    <li class="icon-inline">
+                                        <span class="meta-item"><i class="ico-clock"></i>Mon-Sat 8:00 - 18:00</span>
+                                    </li>
+                                    <li class="icon-inline">
+                                        <span class="meta-item"><i class="ico-phone"></i><a href="tel:+08955883427">0895 588 3427</a></span>
+                                    </li>
+                                    <li class="icon-inline">
+                                        <span class="meta-item"><i class="ico-send"></i><a href="mailto:realestate@example.com">realestate@example.com</a></span>
+                                    </li>
+                                    <li class="icon-inline">
+                                        <span class="meta-item"><i class="ico-pin"></i>Bulgaria, Plovdiv, Pl 4000</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--eof topline-->
+
+        <header class="page_header ls justify-nav-center">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-xl-2 col-lg-3 col-11">
+                        <a href="./" class="logo">
+                            <img src="images/logo.png" alt="img">
+                        </a>
+
+                    </div>
+                    <div class="col-xl-8 col-1 text-sm-center">
+                        <!-- main nav start -->
+                        <nav class="top-nav">
+                            <ul class="nav sf-menu">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/news">News</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/apartment">Apartments</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="loan.html">Loan</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/contact">Contact</a>
+                                </li>
+                            </ul>
+
+                        </nav>
+                        <!-- eof main nav -->
+                    </div>
+                </div>
+            </div>
+            <!-- header toggler -->
+            <span class="toggle_menu"><span></span></span>
+        </header>
+
+        <section class="page_title ds s-overlay s-py-90 s-py-xl-150">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-12 text-center">
+                        <h1 class="emptytext">Contact</h1>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="./">Home</a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="/contact">Contact</a>
+                            </li>
+                        </ol>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="ls ms s-py-90 s-py-xl-150">
+            <div class="container">
+
+                <div class="row">
+                    <h1> Thank you for your message we will get back to you!</h1>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="page_copyright ls s-py-25">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-12 text-center">
+                        <p class="color-dark">Copyright &copy; Zdravka Ivanova<span class="copyright_year">2024</span> All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div><!-- eof #box_wrapper -->
+</div><!-- eof #canvas -->
+
+
+<script src="js/vendor/jquery-3.6.0.min.js"></script>
+<script src="js/vendor/bootstrap.bundle.min.js"></script>
+<script src="js/vendor/affix.js"></script>
+<script src="js/vendor/jquery.appear.js"></script>
+<script src="js/vendor/jquery.cookie.js"></script>
+<script src="js/vendor/jquery.easing.1.3.js"></script>
+<script src="js/vendor/jquery.hoverIntent.js"></script>
+<script src="js/vendor/superfish.js"></script>
+<script src="js/vendor/bootstrap-progressbar.min.js"></script>
+<script src="js/vendor/jquery.countdown.min.js"></script>
+<script src="js/vendor/jquery.countTo.js"></script>
+<script src="js/vendor/jquery.easypiechart.min.js"></script>
+<script src="js/vendor/jquery.scrollbar.min.js"></script>
+<script src="js/vendor/jquery.localScroll.min.js"></script>
+<script src="js/vendor/jquery.scrollTo.min.js"></script>
+<script src="js/vendor/jquery.ui.totop.js"></script>
+<script src="js/vendor/jquery.parallax-1.1.3.js"></script>
+<script src="js/vendor/isotope.pkgd.min.js"></script>
+<script src="js/vendor/jquery.flexslider-min.js"></script>
+<script src="js/vendor/owl.carousel.min.js"></script>
+<script src="js/vendor/photoswipe.js"></script>
+<script src="js/vendor/photoswipe-ui-default.min.js"></script>
+<script src="js/vendor/jflickrfeed.min.js"></script>
+<script src="js/vendor/spectragram.min.js"></script>
+<script src="twitter/jquery.tweet.js"></script>
+<script src="js/vendor/circletype.min.js"></script>
+<script src="js/vendor/jquery.marquee.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

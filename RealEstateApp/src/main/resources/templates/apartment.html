@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+	<title>RealEstate - SinglePage and MultiPage HTML template</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/main.css" class="color-switcher-link">
+	<link rel="stylesheet" href="css/shop.css" class="color-switcher-link">
+	<script src="js/vendor/modernizr-custom.js"></script>
+
+</head>
+
+<body>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="color-main">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<div class="widget widget_search">
+					<form method="get" class="searchform search-form" action="/">
+						<div class="form-group">
+							<input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
+						</div>
+						<button type="submit" class="btn">Search</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="modal-dialog">
+			<div class="fw-messages-wrap ls p-normal">
+				<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+				<!--
+			<ul class="list-unstyled">
+				<li>Message To User</li>
+			</ul>
+			-->
+
+			</div>
+		</div>
+	</div><!-- eof .modal -->
+
+	<div class="modal fade " id="loginModal" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content modal_login_form">
+				<div class="modal-body ">
+					<div class="menu-left cover-image">
+						<img src="images/events/01.jpg" alt="img">
+					</div>
+					<div class="menu-right ls">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						<p>
+							<a href="#" class="link-underline">Sign in</a>
+							<span class="pl-3 pr-3">or</span>
+							<a href="#" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target="#registerModal" class="color-font">Sign up</a>
+						</p>
+
+						<div class="divider-50"></div>
+
+						<form>
+
+							<div class="form-group">
+								<label for="login-email">Email address</label>
+								<input type="text" class="form-control" id="login-email" placeholder="Email">
+							</div>
+
+							<div class="form-group">
+								<label for="login-password">Password</label>
+								<input type="password" class="form-control" id="login-password" placeholder="Password">
+							</div>
+
+							<div class="checkbox form-group mt-35">
+								<input type="checkbox" id="remember_me_checkbox">
+								<label class="mb-0" for="remember_me_checkbox">Remember Me
+								</label>
+							</div>
+
+							<button type="submit" class="btn mt-20 btn-maincolor">Get Started</button>
+
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade " id="registerModal" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content modal_login_form">
+				<div class="modal-body ">
+					<div class="menu-left cover-image">
+						<img src="images/events/02.jpg" alt="img">
+					</div>
+					<div class="menu-right ls">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						<p>
+							<a href="#" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target="#loginModal" class="link-underline">Sign in</a>
+							<span class="pl-3 pr-3">or</span>
+							<a href="#" class="color-font">Sign up</a>
+						</p>
+
+						<div class="divider-50"></div>
+
+						<form>
+
+							<div class="form-group">
+								<label for="login-email">Username</label>
+								<input type="text" class="form-control" id="login-name" placeholder="Enter your username">
+							</div>
+
+							<div class="form-group">
+								<label for="login-password-registr">Password</label>
+								<input type="password" class="form-control" id="login-password-registr" placeholder="Password">
+							</div>
+							<div class="form-group">
+								<label for="login-email-registr">Email</label>
+								<input type="text" class="form-control" id="login-email-registr" placeholder="Your email goes here">
+							</div>
+
+
+							<div class="checkbox form-group mt-35">
+								<input type="checkbox" id="agree_me_checkbox">
+								<label class="mb-0" for="agree_me_checkbox">I agree all terms of science
+								</label>
+							</div>
+
+							<button type="submit" class="btn btn-maincolor mt-20">Get Started</button>
+
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+
+			<!-- template sections -->
+
+			<!--topline section visible only on small screens|-->
+			<section class="page_topline ls ms c-my-10">
+				<div class="container-fluid">
+					<div class="row align-items-center">
+						<div class="col-12 d-flex">
+							<div class="me-auto me-4">
+								<span class="social-icons">
+
+									<span class="color-dark small-text me-4">
+										Follow us:
+									</span>
+
+									<a href="#" class="fa fa-facebook @@iconClass" title="facebook"></a>
+									<a href="#" class="fa fa-twitter @@iconClass" title="twitter"></a>
+									<a href="#" class="fa fa-instagram @@iconClass" title="google"></a>
+
+								</span>
+							</div>
+							<div>
+								<div id="topline_dropdown" class="dropdown meta-dropdown">
+									<span id="toplineDropdown" class="nav-btn type-dots dark" data-bs-toggle="dropdown" aria-expanded="false" role="button">
+										<span></span>
+									</span>
+									<ul class="dropdown-menu dropdown-menu-md site-meta" aria-labelledby="toplineDropdown">
+										<li class="icon-inline">
+											<span class="meta-item"><i class="ico-clock"></i>Mon-Sat 8:00 - 18:00</span>
+										</li>
+										<li class="icon-inline">
+											<span class="meta-item"><i class="ico-phone"></i><a href="tel:+08955883427">0895 588 3427</a></span>
+										</li>
+										<li class="icon-inline">
+											<span class="meta-item"><i class="ico-send"></i><a href="mailto:realestate@example.com">realestate@example.com</a></span>
+										</li>
+										<li class="icon-inline">
+											<span class="meta-item"><i class="ico-pin"></i>Bulgaria, Plovdiv, Pl 4000</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--eof topline-->
+
+			<!-- header with three Bootstrap columns - left for logo, center for navigation and right for includes-->
+			<header class="page_header ls justify-nav-center">
+				<div class="container-fluid">
+					<div class="row align-items-center">
+						<div class="col-xl-2 col-lg-3 col-11">
+							<a href="./" class="logo">
+								<img src="images/logo.png" alt="img">
+							</a>
+
+						</div>
+						<div class="col-xl-8 col-1 text-sm-center">
+							<!-- main nav start -->
+							<nav class="top-nav">
+								<ul class="nav sf-menu">
+									<li class="nav-item active">
+										<a class="nav-link" href="index.html">Home</a>										
+									</li>
+
+									<li class="nav-item">
+										<a class="nav-link" href="/news">News</a>
+									</li>
+
+									<li class="nav-item">
+										<a class="nav-link" href="/apartments">Apartments</a>
+									</li>
+
+									<li class="nav-item">
+										<a class="nav-link" href="loan.html">Loan</a>
+									</li>
+
+									<li class="nav-item">
+										<a class="nav-link" href="/contact">Contact</a>
+									</li>
+								</ul>
+
+							</nav>
+							<!-- eof main nav -->
+						</div>		
+					</div>
+				</div>
+				<!-- header toggler -->
+				<span class="toggle_menu"><span></span></span>
+			</header>
+
+			<section class="page_title ds s-overlay s-py-90 s-py-xl-150">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-md-12 text-center">
+							<h1 class="emptytext">See Apartment Offers with Right Sidebar</h1>
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item">
+									<a href="./">Home</a>
+								</li>
+								<li class="breadcrumb-item">
+									<a href="#">Apartments</a>
+								</li>
+								<li class="breadcrumb-item active">
+									See Apartment Offers with Right Sidebar
+								</li>
+							</ol>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+
+			<section class="ls s-py-90 s-py-xl-150">
+				<div class="container">
+					<div class="row">
+						<main class="col-12">
+							<div class="product">
+
+								<div class="product-wrap position-relative images" data-columns="4">
+									<figure>
+										<div data-thumb="images/shop/44.jpg">
+											<a href="images/shop/44.jpg">
+												<img src="images/shop/44.jpg" alt="img" data-caption="" data-src="images/shop/44.jpg" data-large_image="images/shop/44.jpg" data-large_image_width="1000" data-large_image_height="1000">
+											</a>
+										</div>
+										<div data-thumb="images/shop/45.jpg">
+											<a href="images/shop/45.jpg">
+												<img src="images/shop/45.jpg" alt="img" data-caption="" data-src="images/shop/45.jpg" data-large_image="images/shop/45.jpg" data-large_image_width="1000" data-large_image_height="1000">
+											</a>
+										</div>
+										<div data-thumb="images/shop/46.jpg">
+											<a href="images/shop/46.jpg">
+												<img src="images/shop/46.jpg" alt="img" data-caption="" data-src="images/shop/46.jpg" data-large_image="images/shop/46.jpg" data-large_image_width="1000" data-large_image_height="1000">
+											</a>
+										</div>
+										<div data-thumb="images/shop/47.jpg">
+											<a href="images/shop/47.jpg">
+												<img src="images/shop/47.jpg" alt="img" data-caption="" data-src="images/shop/47.jpg" data-large_image="images/shop/47.jpg" data-large_image_width="1000" data-large_image_height="1000">
+											</a>
+										</div>
+
+									</figure>
+								</div>
+
+								<div class="summary entry-summary">
+
+									<p class="price">
+										<span>
+											<span>$</span>750
+										</span>
+									</p>
+
+									<div class="woocommerce-product-rating">
+										<div class="star-rating">
+											<span style="width:80%">Rated <strong class="rating">4.33</strong> out of 5 based on <span class="rating">3</span> customer ratings</span>
+										</div>
+										<a href="#reviews" class="woocommerce-review-link" rel="nofollow">(<span class="count">3</span> customer
+											reviews)</a>
+									</div>
+									<div>
+										<p class="excerpt">Double-Room Apartment for Sale.</p>
+										<p>The apartment is located in the city center. There are 2 rooms. Luxurious apartment with new and modern furniture. No animals are allowed.</p>
+									</div>
+
+									<form>
+
+										<table class="variations">
+											<tbody>
+												<tr>
+													<td class="label">
+														<label for="pa_color">Color</label>
+													</td>
+													<td class="value">
+														<select id="pa_color" class="wc-default-select" name="attribute_pa_color" data-attribute_name="attribute_pa_color">
+															<option value="">Choose an option</option>
+															<option value="cash" class="attached enabled">Cash</option>
+															<option value="credit" class="attached enabled">Loan</option>
+														</select>
+													</td>
+												</tr>
+												<tr>
+													<td class="label">
+														<label for="pa_size">Size</label>
+													</td>
+													<td class="value">
+														<select id="pa_size" class="wc-default-select" name="attribute_pa_size" data-attribute_name="attribute_pa_size">
+															<option value="">Choose an option</option>
+															<option value="centre" class="attached enabled">City Center</option>
+															<option value="west" class="attached enabled">West</option>
+															<option value="south" class="attached enabled">South</option>
+															<option value="north" class="attached enabled">North</option>
+															<option value="east" class="attached enabled">East</option>
+														</select>
+														<a class="reset_variations" href="#">Clear</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+
+
+										<div class="single_variation_wrap">
+											<div>
+												<button type="submit" class="single_add_to_cart_button button alt">Add to favourite</button>
+											</div>
+										</div>
+
+
+									</form>
+
+									<div class="product_meta">
+
+
+										<span class="sku_wrapper"><strong>SKU:</strong> <span class="sku">N/A</span>
+										</span>
+
+
+										<span class="posted_in"><strong>Categories:</strong> <a href="shop-@@type.html" rel="tag">Apartments</a>, <a href="shop-@@type.html" rel="tag">For Rent</a>
+										</span>
+										<span class="tagged_as"><strong>Tag:</strong> <a href="shop-@@type.html" rel="tag">premium</a></span>
+
+
+									</div>
+
+
+								</div>
+
+								<div class="woocommerce-tabs wc-tabs-wrapper">
+
+									<ul class="tabs wc-tabs" role="tablist">
+										<li class="description_tab" id="tab-title-description" role="tab" aria-controls="tab-description">
+											<a href="#tab-description">Description</a>
+										</li>
+										<li class="additional_information_tab active" id="tab-title-additional_information" role="tab" aria-controls="tab-additional_information">
+											<a href="#tab-additional_information">Additional info</a>
+										</li>
+										<li class="reviews_tab" id="tab-title-reviews" role="tab" aria-controls="tab-reviews">
+											<a href="#tab-reviews">Reviews (3)</a>
+										</li>
+									</ul>
+
+									<div class="panel wc-tab" id="tab-description" role="tabpanel" aria-labelledby="tab-title-description">
+
+										<h6>About Shoreham and Tides</h6>
+
+										<p>Shoreham and Tides is an apartment community located in Cook County and the 60601 ZIP Code. This area is served by the City Of
+											Chicago School District 299 attendance zone.</p>
+
+										<h6 class="mt-4">Other info</h6>
+
+										<p>Discover Lakeshore East from the comfort of our upscale high-rise apartment community. At Shoreham & Tides,
+											all of your apartment wants and needs are satisfied by our sophisticated style created to meet your standards - no matter how high.
+											Our pet friendly studio, one, and two bedroom apartments with high end features and unbeatable views pair with the perfect location for an exceptional
+											experience from our ground floor to the top. Enjoy our 24/7 fitness center, cool off by the resort-style pool, or spend some recreational time with
+											your pet at the Lakeshore East dog park. Here, we offer you unrivaled living in The Windy City.</p>
+									</div>
+									<div class="panel wc-tab" id="tab-additional_information" role="tabpanel" aria-labelledby="tab-title-additional_information">
+
+										<h2>Additional information</h2>
+
+										<table class="shop_attributes">
+
+
+											<tbody>
+												<tr>
+													<th>Loaction</th>
+													<td>
+														<p>City Centre</p>
+													</td>
+												</tr>
+												<tr>
+													<th>Free</th>
+													<td>
+														<p>All year long</p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="panel wc-tab" id="tab-reviews" role="tabpanel" aria-labelledby="tab-title-reviews">
+										<div id="reviews">
+											<div id="comments">
+												<h2>3 reviews for <span>Ship Your Idea</span>
+												</h2>
+
+
+												<ol class="commentlist">
+													<li class="comment even thread-even depth-1" id="li-comment-34">
+
+														<div id="comment-34" class="comment_container">
+
+															<img alt="img" src="http://2.gravatar.com/avatar/babdd787a9577a0e615246ac79cf2826?s=60&amp;d=mm&amp;r=g" srcset="http://2.gravatar.com/avatar/babdd787a9577a0e615246ac79cf2826?s=120&amp;d=mm&amp;r=g 2x" class="avatar avatar-60 photo" height="60" width="60">
+															<div class="comment-text">
+
+																<div class="star-rating">
+																	<span style="width:80%">Rated <strong
+                                                class="rating">4</strong> out of 5</span>
+																</div>
+																<p class="meta">
+																	<strong >James
+                                            Koster</strong> <span>–</span>
+																	<time datetime="2013-06-07T11:43:13+00:00">June 7, 2013
+																	</time>
+																</p>
+
+																<div class="description">
+																	<p>Nice T-shirt, I got one in black. Goes with
+																		anything!</p>
+																</div>
+															</div>
+														</div>
+													</li>
+													<!-- #comment-## -->
+													<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-35">
+
+														<div id="comment-35" class="comment_container">
+
+															<img alt="img" src="http://0.gravatar.com/avatar/f0cde930b42c79145194679d5b6e3b1d?s=60&amp;d=mm&amp;r=g" srcset="http://0.gravatar.com/avatar/f0cde930b42c79145194679d5b6e3b1d?s=120&amp;d=mm&amp;r=g 2x" class="avatar avatar-60 photo" height="60" width="60">
+															<div class="comment-text">
+
+																<div class="star-rating">
+																	<span style="width:80%">Rated <strong
+                                                class="rating">4</strong> out of 5</span>
+																</div>
+																<p class="meta">
+																	<strong >Cobus
+                                            Bester</strong> <span>–</span>
+																	<time datetime="2013-06-07T11:55:15+00:00">June 7, 2013
+																	</time>
+																</p>
+
+																<div class="description">
+																	<p>Very comfortable shirt, and I love the graphic!</p>
+																</div>
+															</div>
+														</div>
+													</li>
+													<!-- #comment-## -->
+													<li class="comment even thread-even depth-1" id="li-comment-36">
+
+														<div id="comment-36" class="comment_container">
+
+															<img alt="img" src="http://1.gravatar.com/avatar/7a6df00789e50714fcde1b759befcc84?s=60&amp;d=mm&amp;r=g" srcset="http://1.gravatar.com/avatar/7a6df00789e50714fcde1b759befcc84?s=120&amp;d=mm&amp;r=g 2x" class="avatar avatar-60 photo" height="60" width="60">
+															<div class="comment-text">
+
+																<div class="star-rating">
+																	<span style="width:100%">Rated <strong
+                                                class="rating">5</strong> out of 5</span>
+																</div>
+																<p class="meta">
+																	<strong >Stuart</strong>
+																	<span>–</span>
+																	<time datetime="2013-06-07T13:02:14+00:00">June 7, 2013
+																	</time>
+																</p>
+
+																<div class="description">
+																	<p>Great T-shirt quality, Great Design and Great
+																		Service.</p>
+																</div>
+															</div>
+														</div>
+													</li>
+													<!-- #comment-## -->
+												</ol>
+
+
+											</div>
+
+
+											<div id="review_form_wrapper">
+												<div id="review_form">
+													<div id="respond" class="comment-respond">
+														<span id="reply-title" class="comment-reply-title">Add a review <small>
+																<a rel="nofollow" id="cancel-comment-reply-link" href="#respond" style="display:none;">Cancel reply</a>
+															</small>
+														</span>
+														<form action="/" method="post" id="commentform" class="comment-form" novalidate="">
+															<p class="comment-notes">
+																<span id="email-notes">Your email address will not be published.</span>
+																Required fields are marked <span class="required">*</span>
+															</p>
+															<div class="comment-form-rating">
+																<label>Your rating</label>
+																<p class="stars">
+																	<span>
+																		<a class="star-1" href="#">1</a>
+																		<a class="star-2" href="#">2</a>
+																		<a class="star-3" href="#">3</a>
+																		<a class="star-4" href="#">4</a>
+																		<a class="star-5" href="#">5</a>
+																	</span>
+																</p>
+															</div>
+															<p class="comment-form-comment">
+																<label for="comment">Your review <span class="required">*</span>
+																</label>
+																<textarea id="comment" name="comment" cols="45" rows="5" aria-required="true" required=""></textarea>
+															</p>
+															<p class="comment-form-author">
+																<label for="author">Name <span class="required">*</span>
+																</label>
+																<input id="author" name="author" type="text" value="" size="30" aria-required="true" required="">
+															</p>
+															<p class="comment-form-email">
+																<label for="email">Email <span class="required">*</span>
+																</label> <input id="email" name="email" type="email" value="" size="30" aria-required="true" required="">
+															</p>
+															<p class="form-submit">
+																<input name="submit" type="submit" id="submit" class="submit" value="Submit">
+
+															</p>
+														</form>
+													</div>
+													<!-- #respond -->
+												</div>
+											</div>
+
+
+											<div class="clear">
+
+											</div>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+							<!-- #product-22 -->
+
+
+						</main>
+					</div>
+
+				</div>
+			</section>
+
+	
+			<section class="page_copyright ls s-py-25">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-md-12 text-center">
+							<p class="color-dark">Copyright &copy; Zdravka Ivanova<span class="copyright_year">2024</span> All Rights Reserved</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+		</div><!-- eof #box_wrapper -->
+	</div><!-- eof #canvas -->
+
+
+	<script src="js/vendor/jquery-3.6.0.min.js"></script>
+	<script src="js/vendor/bootstrap.bundle.min.js"></script>
+	<script src="js/vendor/affix.js"></script>
+	<script src="js/vendor/jquery.appear.js"></script>
+	<script src="js/vendor/jquery.cookie.js"></script>
+	<script src="js/vendor/jquery.easing.1.3.js"></script>
+	<script src="js/vendor/jquery.hoverIntent.js"></script>
+	<script src="js/vendor/superfish.js"></script>
+	<script src="js/vendor/bootstrap-progressbar.min.js"></script>
+	<script src="js/vendor/jquery.countdown.min.js"></script>
+	<script src="js/vendor/jquery.countTo.js"></script>
+	<script src="js/vendor/jquery.easypiechart.min.js"></script>
+	<script src="js/vendor/jquery.scrollbar.min.js"></script>
+	<script src="js/vendor/jquery.localScroll.min.js"></script>
+	<script src="js/vendor/jquery.scrollTo.min.js"></script>
+	<script src="js/vendor/jquery.ui.totop.js"></script>
+	<script src="js/vendor/jquery.parallax-1.1.3.js"></script>
+	<script src="js/vendor/isotope.pkgd.min.js"></script>
+	<script src="js/vendor/jquery.flexslider-min.js"></script>
+	<script src="js/vendor/owl.carousel.min.js"></script>
+	<script src="js/vendor/photoswipe.js"></script>
+	<script src="js/vendor/photoswipe-ui-default.min.js"></script>
+	<script src="js/vendor/jflickrfeed.min.js"></script>
+	<script src="js/vendor/spectragram.min.js"></script>
+	<script src="twitter/jquery.tweet.js"></script>
+	<script src="js/vendor/circletype.min.js"></script>
+	<script src="js/vendor/jquery.marquee.min.js"></script>
+	<script src="js/main.js"></script>
+
+
+</body>
+
+</html>

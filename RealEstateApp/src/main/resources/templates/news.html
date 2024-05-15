@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>News</title>
+    <!-- Include your CSS and other necessary assets here -->
+</head>
+
+<body>
+
+<header>
+    <!-- Include your header content here -->
+</header>
+
+<section class="page_title">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="emptytext">News</h1>
+                <!-- Add breadcrumb if needed -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="news_section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Display articles here -->
+                <div th ="article : ${articles}">
+                    <h2 th ="${article.title}"></h2>
+                    <p th ="${article.content}"></p>
+                    <!-- Add more fields as needed -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <!-- Include your footer content here -->
+</footer>
+
+</body>
+
+</html>

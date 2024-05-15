@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      lang="en"
+      layout:decorate="admin/base">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <div class="card card-primary">
+        <div class="card-header">
+            <h3 class="card-title">Add/Edit apartment</h3>
+        </div>
+
+        <form th:action="@{/dashboard/apartment/save}">
+            <div class="card-body">
+                <select th:name="category" class="form-control">
+                    <option th:each="category : ${categories}" th:value="${category.id}"
+                            th:text="${category.name}"></option>
+                </select>
+
+                <input type="hidden" th:name="productId" th:value="${product != null} ?  ${product.id} : 0"/>
+
+                <div class="form-group">
+                    <label for="productName">Name</label>
+                    <input type="text" class="form-control" th:name="name" id="productName" placeholder="Enter product name"
+                       th:value="${product != null} ? ${product.name} : '' ">
+                </div>
+
+                <div class="form-group">
+                    <label for="productPrice">Price</label>
+                    <input type="number" step="0.01" class="form-control" th:name="price" id="productPrice" placeholder="Enter product price"
+                        th:value="${product != null} ? ${product.price} : ''">
+                </div>
+
+                <div class="form-group">
+                    <label>Description</label>
+                    <textarea class="form-control" rows="5" th:name="description" placeholder="Enter description"
+                        th:text="${product != null} ? ${product.description} : ''"></textarea>
+                </div>
+
+
+            </div>
+            <!-- /.card-body -->
+
+            <div class="card-footer">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
